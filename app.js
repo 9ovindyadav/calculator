@@ -35,6 +35,14 @@ e.preventDefault() ;
 document.addEventListener("keydown",keyBoardInputHandler);
 
 const calculate = (valueString) => {
-    const evaluatedResult = eval(valueString);
+    try {
+        const evaluatedResult = eval(valueString);
+    console.log(evaluatedResult);
     result.value = evaluatedResult ;
+    } catch (error) {
+        result.value = "Error !" ;
+        setTimeout(()=>{
+            result.value = "";
+        },1000);
+    }
 }

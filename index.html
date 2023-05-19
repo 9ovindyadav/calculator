@@ -9,6 +9,36 @@
   <script src="app.js" defer></script>
 </head>
 <body>
-  <h1>Calculator is working</h1>
-</body>
-</html>
+  <main>
+    <h1>Calculator</h1>
+    <div class="result">
+      <input type="text" placeholder="0" readonly>
+    </div>
+    <div class="keys">
+      <div class="key-row">
+        <button onclick="btnInput(7)">7</button>
+        <button onclick="btnInput(8)">8</button>
+        <button onclick="btnInput(9)">9</button>
+        <button onclick="btnInput('/')">/</button>
+      </div>
+      <div class="key-row">
+        <button onclick="btnInput(4)">4</button>
+        <button onclick="btnInput(5)">5</button>
+        <button onclick="btnInput(6)">6</button>
+        <button onclick="btnInput('*')">*</button>
+      </div>
+      <div class="key-row">
+        <button onclick="btnInput(1)">1</button>
+        <button onclick="btnInput(2)">2</button>
+        <button onclick="btnInput(3)">3</button>
+        <button onclick="btnInput('-')">-</button>
+      </div>
+      <div class="key-row">
+        <button onclick="btnInput('ac')">AC</button>
+        <button onclick="btnInput('del')">DEL</button>
+        <button onclick="btnInput('=')">=</button>
+        <button onclick="btnInput('+')">+</button>
+      </div>
+    </div>
+  </main>
+</bodykey-ml>
